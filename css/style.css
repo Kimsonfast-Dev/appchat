@@ -1,0 +1,116 @@
+
+
+
+
+
+
+
+h1{
+    margin: 0;
+}
+
+
+
+
+html{
+    margin: 0;
+    font-size: 15px;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    width: 70vw;
+    height: 100vh;
+}
+
+
+.container>h1{
+    font-size: 3rem;
+    height: 3rem;
+}
+
+main{
+    height: calc(100vh - 5rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .formchat{
+    height: calc(100% - 2.5rem);
+    width: 50rem;
+    margin: 0.5rem;
+    border: 0.2rem solid gray;
+    border-radius: 1rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    overflow-y: scroll;
+}
+
+main .formchat::-webkit-scrollbar{
+    width: 0px;
+}
+
+
+main .formchat span{
+    user-select: none;
+    min-width: 5rem;
+    margin: 0.2rem 0.6rem;
+    border-radius: 0.9rem;
+    background-color: rgb(102, 190, 75);
+    text-align: center;
+    display: inline-flex; /* Giữ chiều ngang và cho phép chiều dọc giãn nở */
+    flex-direction: column; /* Đảm bảo nội dung sắp xếp theo chiều dọc */
+    padding: 0.2rem; /* Thêm không gian bên trong */
+    max-width: 100%; /* Đảm bảo chiều rộng không vượt quá phần tử cha */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main .form_nav{
+    height: 2.5rem;
+    width: 50rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main .form_nav input{
+    width: 85%;
+    border-radius: 0.5rem;
+    margin: 0 0.2rem 0 0;
+    border: 0.2rem solid gray;
+}
+
+main .form_nav button{
+    width: 20%;
+    border-radius: 0.5rem;
+    background-color: rgb(102, 190, 75);
+}
